@@ -1,19 +1,18 @@
-package com.hellow.eventos.classes.endereco;
+package com.hellow.eventos.classes.midia;
 
-import com.hellow.eventos.classes.tipo.Tipo;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity(name="endereco")
-@Table(name="endereco")
+@Entity(name="midia")
+@Table(name="midia")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Endereco {
+public class Midia {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
@@ -29,7 +28,7 @@ public class Endereco {
     private String complemento;
 
     @ManyToOne
-    @JoinColumn(name="id_tipo")
-    private Tipo tipo_id;
+    @JoinColumn(name="id_midia")
+    private Midia Midia_id;
 
 }

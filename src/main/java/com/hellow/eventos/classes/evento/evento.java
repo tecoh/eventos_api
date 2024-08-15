@@ -1,6 +1,5 @@
 package com.hellow.eventos.classes.evento;
 
-import com.hellow.eventos.classes.endereco.Endereco;
 import com.hellow.eventos.classes.tipo.Tipo;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
